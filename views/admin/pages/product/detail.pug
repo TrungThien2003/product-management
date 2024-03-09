@@ -1,0 +1,12 @@
+ extends ../../clients/layouts/
+
+ block main  
+ h1(class="mb-4")  #{product.title}
+ div(class="mb-4") #{product.price}
+ div(class="mb-4")
+  img(
+    src=product.thumbnail
+    style="width: 100px"
+  )
+
+ a(href=`${prefixAdmin}/product/edit/${product.id}`) Chỉnh sửa

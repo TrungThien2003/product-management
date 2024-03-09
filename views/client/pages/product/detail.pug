@@ -1,0 +1,9 @@
+extends ../../layouts/default.pug
+block main 
+ .container.my-3 
+   .row 
+    .col-12
+      h1(class="mb-4") #{product.title} 
+      div(class="mb-4") Giá : #{product.price}$
+      div(class="mb-4") Hình ảnh : 
+       img(src=product.thumbnail)
